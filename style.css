@@ -32,7 +32,7 @@ header{
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
     height: 800px;
-    width: 100vw;
+    width: 100%;
     color: var(--White);
 }
 
@@ -71,12 +71,12 @@ a{
     color: var(--Verydarkdesaturatedblue);
     text-align: center;
     line-height: 3;
+    font-weight: 700;
 }
 
 .contact:hover {
     background-color: rgba(255, 255, 255, 0.397);
     color:var(--White);
-    
 }
 
 
@@ -226,10 +226,15 @@ section.image{
     margin: 15px;
 }
 
-..gallery{
+.gallery{
     display: grid;
-    width:100vh;
-    grid-template: 60vh / 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    grid-template-columns : repeat(4,1fr);
+    grid-template-rows: 1 ;
+}
+
+.gallery img{
+    margin: 0;
 }
 
 h5{
@@ -254,11 +259,11 @@ footer{
     color: var(--footer);
 }
 
-footer .logo{
-    height: 35px;
-    color: var(--footer);
-    margin:40px
+footer .logo svg path, footer .logo{
+    fill: var(--footer);
+    margin:40px;
 }
+
 
 footer div:nth-child(2) a{
     color: var(--footer);
@@ -276,18 +281,12 @@ footer div:nth-child(3) {
     margin: 80px auto 0px;
 }
 
-footer div a:hover {
+footer div a:hover svg path, footer div a:hover  {
+    fill: white;
     color: white;
 }
 
-.iconcolor{
-    width: 20px;
-    height: 20px;
-    fill: greenyellow;
-}
 
-#iconfacebook{
-}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
