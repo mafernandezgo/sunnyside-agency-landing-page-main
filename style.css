@@ -304,6 +304,7 @@ footer div a:hover svg path, footer div a:hover  {
         right: 50px;
         top: 100px;
         background: var(--White);
+        margin: auto;
     }
 
     .contact{
@@ -313,7 +314,8 @@ footer div a:hover svg path, footer div a:hover  {
     }
 
     .menuList2 a{
-        color:var(--Darkgrayishblue)
+        color:var(--Darkgrayishblue);
+        text-align: center;
     }
 
     .hamburguerMenu{

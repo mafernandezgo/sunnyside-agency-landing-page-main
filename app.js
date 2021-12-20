@@ -1,4 +1,5 @@
-const btn = document.querySelector(".hamburguerMenu")
-const menu = document.querySelector(".menuList")
 
-btn.classList.toggle("active")
+function myfunction() {
+    const btn = document.querySelector(".hamburguerMenu")
+    btn.classList.toggle("active")
+}
