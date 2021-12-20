@@ -24,9 +24,15 @@
           <a class="menuListItem" href="">Projects</a>
           <a class="menuListItem contact" href="">Contact</a>
         </div>
-        <button type="button" class="hamburguerMenu">
+        <div type="button" class="hamburguerMenu active">
           <img src="./images/icon-hamburger.svg">
-        </button>
+          <div class="menuList2">
+            <a class="menuListItem" href="">About </a>
+            <a class="menuListItem" href="">Services</a>
+            <a class="menuListItem" href="">Projects</a>
+            <a class="menuListItem contact" href="">Contact</a>
+          </div>
+        </div>
       </nav>
       <h1>We are creatives</h1>
       <div><img class="arrow" src="./images/icon-arrow-down.svg"></div>
@@ -44,13 +50,14 @@
     
     <div class="mesh imgbackground">
       <picture>
-        <source media="(max-width: 440px)" srcset="./images/mobile/image-transform.jpg">
-        <img src="./images/desktop/image-transform.jpg"></picture>
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-transform.jpg">
+        <img src="./images/desktop/image-transform.jpg">
+      </picture>
     </div>
     
-    <div class="mesh imgbackground ">
+    <div class="mesh imgbackground">
       <picture>
-        <source media="(max-width: 440px)" srcset="./images/mobile/image-stand-out.jpg">
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-stand-out.jpg">
         <img src="./images/desktop/image-stand-out.jpg"></picture>
     </div>
     
@@ -61,8 +68,8 @@
     </div>
   
     <div class="mesh imgbackground gd"> 
-      <h3>Graphic design</h3>
-      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        <h3>Graphic design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
     </div>
   
     <div class="mesh imgbackground ph">
@@ -99,10 +106,33 @@
   </section>
 
   <section class="gallery grid">
-    <div><img src="./images/desktop/image-gallery-milkbottles.jpg"></div>
-    <div><img src="./images/desktop/image-gallery-orange.jpg"></div>
-    <div><img src="./images/desktop/image-gallery-cone.jpg"></div>
-    <div><img src="./images/desktop/image-gallery-sugarcubes.jpg"></div>
+    <div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg">
+      </picture>
+    </div>
+
+    <div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-orange.jpg">
+          <img src="./images/desktop/image-gallery-orange.jpg">
+        </picture>
+      </div>
+      
+    <div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-cone.jpg">
+          <img src="./images/desktop/image-gallery-cone.jpg">
+        </picture>
+      </div>
+      
+      <div>
+        <picture>  
+        <source media="(max-width: 800px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg">
+      </picture>
+    </div>
   </section>
 
   <footer>

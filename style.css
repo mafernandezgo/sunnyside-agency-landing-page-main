@@ -164,7 +164,7 @@ section.image{
     background-image: url(./images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
 }
-.imgbackground>h3 {
+h3 {
     text-align: center;
     margin: 400px 200px 0px ;
     font-size: var(--h3);
@@ -178,7 +178,7 @@ section.image{
     font-family: var(--barlow);
 }
 
-.gd>h3, .gd>p{
+.gd>div>h3, .gd>div>p{
     color: var(--graphicDesignText);
 }
 
@@ -232,6 +232,7 @@ h4{
 
 .gallery img{
     margin: 0;
+    width: 100%;
 }
 
 h5{
@@ -288,15 +289,21 @@ footer div a:hover svg path, footer div a:hover  {
 
 @media (max-width: 800px){
 
-    
     .menuList{
-        background: var(--White);
         display: none;
+    }
+    .menuList2{
+        display:none;
+    }
+
+    .hamburguerMenu.active .menuList2{
+        display: flex;
         flex-direction: column;
         width: 300px;
         position: fixed;
         right: 50px;
         top: 100px;
+        background: var(--White);
     }
 
     .contact{
@@ -305,10 +312,9 @@ footer div a:hover svg path, footer div a:hover  {
         margin-bottom: 20px;
     }
 
-    .menuList a{
+    .menuList2 a{
         color:var(--Darkgrayishblue)
     }
-
 
     .hamburguerMenu{
         display: block;
@@ -331,7 +337,7 @@ footer div a:hover svg path, footer div a:hover  {
 
     section.image{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 1fr 1.2fr 1.2fr 1fr 2fr 2fr;
     }
 
     .mesh.text {
@@ -340,12 +346,26 @@ footer div a:hover svg path, footer div a:hover  {
         text-align: center;
     }
 
+    .mesh>p{
+        font-size: 20px;
+    }
+
     .image .imgbackground.gd{
+        position: relative;
         background-image: url(./images/mobile/image-graphic-design.jpg);
     }
 
     .image .imgbackground.ph{
+        position: relative;
         background-image: url(./images/mobile/image-photography.jpg);
+    }
+
+    h3{
+        margin: 700px 200px 0px;
+    }
+
+    .imgbackground>p{
+        font-size: 20px;
     }
 
     h4{
@@ -369,5 +389,10 @@ footer div a:hover svg path, footer div a:hover  {
 
     h6{
         margin-bottom: 40px;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
     }
 }
