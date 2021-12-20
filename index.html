@@ -24,6 +24,9 @@
           <a class="menuListItem" href="">Projects</a>
           <a class="menuListItem contact" href="">Contact</a>
         </div>
+        <button type="button" class="hamburguerMenu">
+          <img src="./images/icon-hamburger.svg">
+        </button>
       </nav>
       <h1>We are creatives</h1>
       <div><img class="arrow" src="./images/icon-arrow-down.svg"></div>
@@ -40,11 +43,15 @@
     </div>
     
     <div class="mesh imgbackground">
-      <img src="./images/desktop/image-transform.jpg">
+      <picture>
+        <source media="(max-width: 440px)" srcset="./images/mobile/image-transform.jpg">
+        <img src="./images/desktop/image-transform.jpg"></picture>
     </div>
     
     <div class="mesh imgbackground ">
-      <img src="./images/desktop/image-stand-out.jpg">
+      <picture>
+        <source media="(max-width: 440px)" srcset="./images/mobile/image-stand-out.jpg">
+        <img src="./images/desktop/image-stand-out.jpg"></picture>
     </div>
     
     <div class="mesh text iso">
@@ -120,5 +127,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Manuela Fernandez</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

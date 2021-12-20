@@ -24,8 +24,10 @@ body{
     margin: 0;
 }
 
-.iconsLib{
+.hamburguerMenu{
     display: none;
+    border:none;
+    background: none;
 }
 
 header{
@@ -103,10 +105,6 @@ section.image{
     grid-template-columns: 1fr 1fr;
 }
 
-
-.mesh.imgbackground{
-    height: 600px;
-}
 
 .mesh.text{
     margin: 150px 150px 0px 150px;
@@ -194,7 +192,7 @@ section.image{
     text-align: center;
 }
 
-.testimonials h4{
+h4{
     margin: 150px 150px 70px;
     text-transform: uppercase;
     font-size: var(--h4);
@@ -230,7 +228,6 @@ section.image{
     display: grid;
     width: 100vw;
     grid-template-columns : repeat(4,1fr);
-    grid-template-rows: 1 ;
 }
 
 .gallery img{
@@ -286,7 +283,91 @@ footer div a:hover svg path, footer div a:hover  {
     color: white;
 }
 
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 800px){
+
+    
+    .menuList{
+        background: var(--White);
+        display: none;
+        flex-direction: column;
+        width: 300px;
+        position: fixed;
+        right: 50px;
+        top: 100px;
+    }
+
+    .contact{
+        background:var(--Yellow);
+        color: var(--Verydarkdesaturatedblue);
+        margin-bottom: 20px;
+    }
+
+    .menuList a{
+        color:var(--Darkgrayishblue)
+    }
+
+
+    .hamburguerMenu{
+        display: block;
+    }
+
+    header{
+        background: url(./images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        height:1000px;
+    }
+
+    h1{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    header>div{
+        margin-top: 350px;
+    }
+
+    section.image{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .mesh.text {
+        margin: 50px 170px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .image .imgbackground.gd{
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+    }
+
+    .image .imgbackground.ph{
+        background-image: url(./images/mobile/image-photography.jpg);
+    }
+
+    h4{
+        margin: 80px 50px 70px;
+    }
+
+    .testimonialList{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .clientTestimonial{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    h5{
+        margin-top: 10px;
+    }
+
+    h6{
+        margin-bottom: 40px;
+    }
+}
